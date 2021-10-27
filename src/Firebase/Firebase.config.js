@@ -1,10 +1,12 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyDKa4-3y1y_rRp-gPrSYK2z0z6GZjnt2qg",
-    authDomain: "volunteer-services.firebaseapp.com",
-    projectId: "volunteer-services",
-    storageBucket: "volunteer-services.appspot.com",
-    messagingSenderId: "279479119508",
-    appId: "1:279479119508:web:97844cb7bbdd6d0a4f0e81"
+  apiKey: process.env.REACT_APP_VOLUNTEER_API_KEY,
+  authDomain: process.env.REACT_APP_VOLUNTEER_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_VOLUNTEER_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_VOLUNTEER_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_VOLUNTEER_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_VOLUNTEER_APP_ID,
   };
 
+  // console.log( process.env.REACT_APP_VOLUNTEER_AUTH_DOMAIN);
   export default firebaseConfig;
+  
